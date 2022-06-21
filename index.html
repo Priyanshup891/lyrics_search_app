@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyrics Search App</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="get-started">
+            <h2>search your favorite song lyrics</h2>
+            <button class="btn">get started</button>
+        </div>
+
+        <div class="search-block">
+            <div class="search">
+                <input type="text" id="search" placeholder="Search..">
+                <button class="search-btn btn" id="search-btn">search</button>
+            </div>
+
+            <div class="songs">
+                <div  class="songs-list" onload="loadfun()" id="songs-list">
+                    <span class="pre-loader"></span>
+                </div>
+                
+                <div class="song-lyrics" onload="loadfun()" id="song-lyrics">
+                </div>
+
+            </div>
+           
+        </div>
+    </div>
+
+    <script src="./javaScript/app.js"></script>
+</body>
+</html>
